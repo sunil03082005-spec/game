@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Game Zone - Slot Booking</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    color:#333;
+}
+
+/* Header */
+header{
+    background:#222;
+    color:#fff;
+    padding:15px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+header h2{
+    color:#00e676;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    margin-left:20px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#00e676;
+}
+
+/* Hero Section */
+.hero{
+    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url("https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:100px 20px;
+}
+
+.hero h1{
+    font-size:45px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:18px;
+    margin-bottom:25px;
+}
+
+.hero a{
+    background:#00e676;
+    color:#000;
+    padding:12px 30px;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+/* Booking Form */
+.booking{
+    padding:60px 20px;
+}
+
+.form-box{
+    max-width:500px;
+    margin:auto;
+    background:#fff;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 15px rgba(0,0,0,.15);
+}
+
+.form-box h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.form-box label{
+    display:block;
+    margin-top:15px;
+    font-weight:bold;
+}
+
+.form-box input,
+.form-box select{
+    width:100%;
+    padding:12px;
+    margin-top:5px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.form-box button{
+    width:100%;
+    margin-top:20px;
+    padding:12px;
+    background:#00c853;
+    color:white;
+    border:none;
+    border-radius:5px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.form-box button:hover{
+    background:#009624;
+}
+
+/* Footer */
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+</style>
+
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <h2>🎮 Game Zone</h2>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#booking">Book Slot</a>
+        <a href="#">Games</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <h1>Book Your Gaming Slot</h1>
+    <p>Reserve your favorite game and enjoy a hassle-free gaming experience.</p>
+
+    <a href="#booking">Book Now</a>
+</section>
+
+<!-- Booking Form -->
+<section class="booking" id="booking">
+
+<div class="form-box">
+
+<h2>Slot Booking Form</h2>
+
+<form>
+
+<label>Full Name</label>
+<input type="text" placeholder="Enter your name" required>
+
+<label>Mobile Number</label>
+<input type="tel" placeholder="Enter mobile number" required>
+
+<label>Select Game</label>
+<select required>
+<option value="">Choose Game</option>
+<option>PlayStation 5</option>
+<option>Cricket</option>
+<option>Football</option>
+<option>Badminton</option>
+<option>Table Tennis</option>
+<option>Pool</option>
+</select>
+
+<label>Select Date</label>
+<input type="date" required>
+
+<label>Select Time Slot</label>
+<select required>
+<option value="">Choose Time</option>
+<option>09:00 AM - 10:00 AM</option>
+<option>10:00 AM - 11:00 AM</option>
+<option>11:00 AM - 12:00 PM</option>
+<option>01:00 PM - 02:00 PM</option>
+<option>02:00 PM - 03:00 PM</option>
+<option>03:00 PM - 04:00 PM</option>
+<option>04:00 PM - 05:00 PM</option>
+</select>
+
+<button type="submit">Book Slot</button>
+
+</form>
+
+</div>
+
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2026 Game Zone. All Rights Reserved.</p>
+    <p>Email: info@gamezone.com | Phone: +91 98765 43210</p>
+</footer>
+
+</body>
+</html>
